@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 a {
+    text-decoration: none;
+    color: black;
+  }
+
+  span {
+    color: orangered;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav ul li {
+    position: relative;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 27px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: orangered;
+    bottom: 0px;
+    left: 0;
+    transition: ease .40s;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px;
+    transition: .3s;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.1);
+  }
+  
+  .about { 
+    min-height: 100vh;
+    height: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 150px;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .about p {
+    font-size: 30px;
+    height: 100px;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .home-img {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+  }
+
+  .home-img img {
+    height: 500px;
+    position: absolute;
+    left: 60%;
+    top: 15px;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+  }
+
+  .home-img:hover .shape {
+    bottom: 40px;
+  }
+  
+  .home-img:hover .img1 {
+    left: 45%;
+  }
+
+  .skills {
+    padding-top: 120px;
+  }
+
+  .container {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.1);
+  }
+
+  .container h2 {
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .sub-box {
+    padding: 45px 45px 45px 45px;
+    transition: ease .5s;
+    justify-content: space-between;
+  }
+
+  #sub-img {
+    max-width: 100%;
+    width: 60px;
+    margin-bottom: 20px;
+  }
+
+  #sub-img h3 {
+    font-size: 15px;
+    padding: 10px 50px;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .educationBox {
+    margin: 0px 0px;
+    display: flex;
+    justify-content: space-between ;
+  }
+
+  .educationBox img {
+    height: 200px;
+  }
+
+  .codecademy-logo {
+    margin-left: 70px;
+  }
+
+  .education-text {
+    margin-top: 60px;
+    margin-right: 70px;
+  }
+
+  .education-text h3 {
+    font-size: 30px;
+    margin-right: 50px;
+  }
+  
+  .education-text h4 {
+    font-size: 20px;
+    font-weight: 50;
+    margin-right: 50px;
+  }
+
+  #education {
+    padding-top: 120px
+  }
+
+  .items2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .items2 img {
+    height: 170px;
+    padding: 20px;
+  }
+
+  #projects {
+    padding-top: 10px
+  }
+
+  a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footerBox {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  .footerBox img {
+    height: 50px;
+    margin-left: 90px;
+    margin-top: 20px;
+  }
+
+  .footerBox p{
+    margin-top: 32px;
+    margin-right: 150px; 
+    font-size: 20px;
+  }
+
