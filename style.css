@@ -12,6 +12,7 @@
   h1 a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
   }
 
   span {
@@ -66,22 +67,43 @@
     padding: 30px;
     box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.1);
   }
-  
-  .about { 
-    min-height: 100vh;
-    height: 0;
-    width: 100%;
-    position: relative;
-    margin-top: 150px;
-    align-items: center;
-    padding: 30px;
+
+  header span {
+    font-size: 30px;
   }
 
-  .about p {
-    font-size: 30px;
-    height: 100px;
-    font-weight: bold;
+  main {
+    text-align: center;
+  }
+  
+  .about { 
+    width: 100%;
+    margin-top: 240px;
+    margin-bottom: 110px;
+    align-items: center;
+  }
+
+  .name h6 {
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .name p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .name span {
+    color: orangered;
+  }
+
+  .background p {
+    font-size: 20px;
+    height: 50px;
     line-height: 1;
+    margin: auto;
+    width: 100%;
+    padding: 50px;
   }
 
   .home-img {
@@ -132,6 +154,10 @@
     justify-content: space-between;
   }
 
+  .sub-box img {
+    height: 100px;
+  }
+
   #sub-img {
     max-width: 100%;
     width: 60px;
@@ -146,7 +172,7 @@
   .items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-    grid-gap: 2rem;
+    grid-gap: 1rem;
     align-items: center;
     text-align: center;
   }
